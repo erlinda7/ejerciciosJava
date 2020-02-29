@@ -11,11 +11,13 @@ package ejerciciosjava;
  */
 public class EjerciciosJava {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+  public static void main (String[] args) throws java.lang.Exception
+  {
+     java.io.BufferedReader r = new java.io.BufferedReader (new java.io.InputStreamReader (System.in));
+     String s;
+     while (!(s=r.readLine()).startsWith("42"))
+         System.out.println(s);
+  }
+
     
 }

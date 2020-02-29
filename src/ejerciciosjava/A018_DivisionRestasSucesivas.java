@@ -13,7 +13,7 @@ import java.util.Scanner;
  * mediante restas sucesivas. Ejm: dividendo 153 divisor 7 Salida:21,857142
  * REstricciones: los datos de entrada seran numeros enteros positivos
  */
-public class DivisionRestasSucesivas_18 {
+public class A018_DivisionRestasSucesivas {
 
     public void division(int dividendo, int divisor) {
         
@@ -48,7 +48,7 @@ public class DivisionRestasSucesivas_18 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        DivisionRestasSucesivas_18 div = new DivisionRestasSucesivas_18();
+        A018_DivisionRestasSucesivas div = new A018_DivisionRestasSucesivas();
         int dividendo, divisor;
         double res;
         do {

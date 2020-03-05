@@ -4,23 +4,14 @@
  * and open the template in the editor.
  */
 package pilas;
-
-import java.util.Stack;
-
 /**
-pila de platos
-LIFO Last In First Out
-ultimo en entrar, primero en salir
-
+ *
+ * @author chamb
  */
-public class Pila {
-    public static void main(String[] args) {
-        Stack<Integer>  pila= new Stack<>();
-        
-        for (int i = 0; i < 10; i++) {
-            pila.push(i);
-        }
-        pila.pop(); //elimina el ultimo
-        System.out.println(pila.peek());
-    }
+public interface Pila {
+    void apilar(URL url);
+    void desapilar();
+    URL obtener();
+    int longitud();
+    boolean vacia();
 }

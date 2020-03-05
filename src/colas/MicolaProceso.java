@@ -14,7 +14,7 @@ public class MicolaProceso implements ColaProceso {
     private NodoProceso cabeza, ultimo;
 
     @Override
-    public void encolar(Trabajo t) {
+    public void encolar(Trabajo t) { //insertar final
         NodoProceso nuevoNodo = new NodoProceso(t);
         if (cabeza == null) {
             cabeza = nuevoNodo;
@@ -26,7 +26,7 @@ public class MicolaProceso implements ColaProceso {
     }
 
     @Override
-    public void eliminar() {
+    public void eliminar() { //eliminar inicio
         if(cabeza !=null ){
          NodoProceso eliminar=cabeza;
          cabeza = cabeza.siguiente;
